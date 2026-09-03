@@ -14,6 +14,7 @@ module.exports = {
     author: `DVRPC`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
+  pathPrefix: `/sepsa`,
   plugins: [
     `gatsby-plugin-image`,
     {
