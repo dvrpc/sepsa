@@ -1,0 +1,407 @@
+@import url("https://use.typekit.net/xml0yyp.css");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Acumin Variable Concept";
+  src: local("Acumin Variable Concept"), local("AcuminVariableConcept");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+body {
+  font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #075c9c;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1d72b2;
+}
+
+:root {
+  --blue: #0065a4;
+  --blue-dark: #075c9c;
+  --blue-pale: #e8f1f8;
+  --green: #78933c;
+  --ink: #252d33;
+  --content: 1240px;
+  --gutter: clamp(20px, 5vw, 56px);
+  font-family: "acumin-variable", "Acumin Variable Concept", Arial, Helvetica,
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  background: white;
+  color: var(--ink);
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+a {
+  color: var(--blue);
+  text-underline-offset: 2px;
+}
+p,
+ul,
+ol {
+  margin: 0 0 1rem;
+}
+li {
+  margin-bottom: 0.3rem;
+}
+
+.site-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.site-header {
+  background: linear-gradient(to bottom, #0c60a0 0%, #2f7bb9 100%);
+  border-bottom: 50px solid var(--blue-dark);
+}
+.header-rule {
+  height: 18px;
+  background: #287faf;
+}
+.header {
+  height: 210px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.brand {
+  align-self: flex-start;
+  width: 548px;
+  min-width: 0;
+  max-width: 48%;
+}
+.brand img {
+  display: block;
+  width: 100%;
+}
+.county-seals {
+  width: min(49%, 692px);
+  min-width: 0;
+  height: auto;
+}
+
+.page-content {
+  width: min(var(--content), calc(100% - (2 * var(--gutter))));
+  margin: 0 auto;
+  padding: 62px 0 74px;
+  flex: 1;
+  font-size: 1.125rem;
+}
+.site-footer {
+  background: var(--blue);
+  color: white;
+}
+.site-footer > div {
+  width: min(var(--content), calc(100% - (2 * var(--gutter))));
+  margin: auto;
+  padding: 26px 0;
+}
+.site-footer p {
+  max-width: 1120px;
+  margin: 0 0 3px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 18px;
+  font-size: 0.9rem;
+}
+.page-title {
+  color: var(--blue);
+  font-weight: 600;
+  font-size: clamp(1.85rem, 2.8vw, 2.4rem);
+  line-height: 1.1;
+  letter-spacing: 1px;
+  margin: 0 0 26px;
+  padding-bottom: 14px;
+  border-bottom: 5px solid #aaa;
+}
+.content-copy {
+  width: 100%;
+  max-width: 1160px;
+  min-width: 0;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+.content-copy h2 {
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 1.65rem;
+  line-height: 1.2;
+  margin: 27px 0 8px;
+}
+.content-copy h3 {
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin: 22px 0 6px;
+}
+.content-copy hr {
+  border: 0;
+  border-top: 1px solid #888;
+  margin: 28px 0;
+}
+.compact-list {
+  padding-left: 1.5rem;
+}
+.board-list {
+  list-style: none;
+  padding: 0;
+}
+.board-list li {
+  margin-bottom: 0.22rem;
+}
+.download-list a {
+  font-weight: 700;
+}
+
+.year-filter label {
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: 8px;
+}
+.year-select {
+  position: relative;
+  width: min(100%, 280px);
+  margin-bottom: 28px;
+}
+.year-select::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 52px;
+  border-radius: 0 9px 9px 0;
+  background: #287bb7;
+  pointer-events: none;
+}
+.year-select::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 11px solid white;
+  transform: translateY(-25%);
+  pointer-events: none;
+}
+.year-select select {
+  display: block;
+  width: 100%;
+  height: 48px;
+  appearance: none;
+  border: 2px solid #287bb7;
+  border-radius: 9px;
+  background: white;
+  padding: 0 64px 0 14px;
+  color: var(--ink);
+  font: inherit;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+.meetings {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 0.96rem;
+}
+.meetings-date-column {
+  width: 28%;
+}
+.meetings th {
+  padding: 10px 9px;
+  text-align: left;
+  border-bottom: 1px solid #5795bb;
+}
+.meetings tbody th {
+  font-weight: 400;
+}
+.meetings td {
+  padding: 12px 9px;
+  border-bottom: 1px solid #76a8c7;
+}
+.meetings tbody tr:nth-child(even) {
+  background: var(--blue-pale);
+}
+.meeting-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.agenda-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+.agenda-action {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 9px 16px;
+  background: var(--blue);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+.agenda-action:hover {
+  background: var(--blue-dark);
+}
+.meeting-address {
+  margin-bottom: 1rem;
+  font-style: normal;
+}
+.meeting-address span {
+  display: block;
+}
+.agenda-page {
+  font-size: 0.95rem;
+  line-height: 1.48;
+}
+.agenda-page .eyebrow {
+  margin-bottom: 8px;
+}
+.agenda-page .page-title {
+  margin-bottom: 31px;
+}
+.agenda-page h2 {
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+.agenda-page h2:not(:first-of-type) {
+  margin-top: 14px;
+}
+.agenda-meeting-date {
+  margin-bottom: 2px;
+}
+.agenda-page .meeting-address {
+  margin-bottom: 0;
+}
+.agenda-details > ol,
+.agenda-details > ul {
+  padding-left: 1.15rem;
+}
+.agenda-details,
+.agenda-details > * {
+  max-width: 100%;
+}
+.agenda-details {
+  color: #343434;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+.agenda-details img,
+.agenda-details table {
+  max-width: 100%;
+}
+.agenda-page .agenda-details > h2 {
+  margin: 0 !important;
+  color: #343434;
+  font-size: inherit;
+  font-weight: 600;
+  line-height: 1.55;
+}
+.agenda-page .agenda-details > h3 {
+  margin: 4px 0 0 1.7rem !important;
+  color: #343434;
+  font-size: inherit;
+  font-weight: 400;
+  line-height: 1.55;
+}
+.agenda-details > p {
+  margin: 0 0 8px !important;
+}
+.agenda-details > ol > li,
+.agenda-details > ul > li {
+  font-weight: 600;
+}
+.agenda-details ol,
+.agenda-details ul {
+  margin-top: 3px;
+  margin-bottom: 8px;
+}
+.agenda-details li ol,
+.agenda-details li ul {
+  margin-top: 3px;
+  margin-bottom: 7px;
+  padding-left: 1.8rem;
+  font-weight: 400;
+}
+.agenda-details li li {
+  margin-bottom: 1px;
+  font-weight: 400;
+}
+.agenda-details h2 span,
+.agenda-details h3 span,
+.agenda-details li span {
+  color: inherit !important;
+  background: transparent !important;
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    border-bottom-width: 24px;
+  }
+  .header-rule {
+    height: 10px;
+  }
+  .header-inner {
+    height: 124px;
+    gap: 10px;
+  }
+  .brand {
+    flex: 0 1 60%;
+    max-width: 60%;
+  }
+  .county-seals {
+    flex: 0 1 38%;
+    max-width: 38%;
+  }
+  .page-content {
+    padding: 38px 0 54px;
+  }
+  .content-copy {
+    font-size: 1rem;
+  }
+  .year-select {
+    width: 100%;
+  }
+  .meetings th:nth-child(3),
+  .meetings td:nth-child(3) {
+    display: none;
+  }
+  .meetings-date-column {
+    width: 34%;
+  }
+  .meetings a {
+    overflow-wrap: anywhere;
+  }
+  .meeting-links {
+    gap: 8px 14px;
+  }
+}

@@ -1,127 +1,117 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
+import Committee from "../components/committee"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
 
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-  },
-  {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
-    description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Netlify. Get started for free!",
-  },
-]
+const IndexPage = () => {
+  return (
+    <Layout>
+      <article className="content-copy">
+        <h1 className="page-title">The Sustainable Energy Partnership</h1>
+        <p>
+          The Sustainable Energy Partnership (SEP) has been working together
+          since September 2020 to help member governments secure access to
+          reliable, low-cost energy prices and purchase renewable energy to
+          power county operations in Bucks, Chester, Delaware, and Montgomery
+          counties. In October 2023, the four counties adopted a Memorandum of
+          Understanding (MOU) establishing an Energy Board to oversee the
+          Partnership and advance shared goals:
+        </p>
+        <ol className="list-decimal ml-8">
+          <li>Meet renewable energy targets.</li>
+          <li>Lower energy costs and lessen budget risk.</li>
+          <li>Grow Pennsylvania's renewable energy resources.</li>
+          <li>Institutionalize and plan for ongoing energy procurement.</li>
+          <li>Avoid overburdening county resources.</li>
+        </ol>
+        <p>
+          In 2024, SEP established a wholesale electricity portfolio to provide
+          member governments with more predictable and stable energy prices. A
+          competitively selected supplier manages a dedicated wholesale
+          subaccount for all members, building the portfolio over time under a
+          consultant’s guidance and according to SEP’s approved cost-management
+          strategy for electricity and renewable energy.
+        </p>
+        <p>
+          The portfolio includes fixed-rate blocks of power (typically for 80%
+          of load) purchased on the forward market for up to four years in
+          advance through a transparent wholesale bid process, with the
+          remaining supply from PJM’s hourly-priced market. This strategy allows
+          for a consistent billing rate, opportunities to reduce energy usage,
+          and flexibility to procure renewable energy.
+        </p>
+        <p>
+          New members can join at any time if they meet criteria such as load
+          size, credit-worthiness, and alignment with renewable energy goals.
+        </p>
 
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
+        <h2 className="font-semibold">Energy Board</h2>
+        <ul className="board-list">
+          <li>
+            <strong>Chairperson:</strong> Dave Donelan, Montgomery County{" "}
+            <i>(alternate: Joe Coco)</i>
+          </li>
+          <li>
+            <strong>Bucks County Appointee:</strong> Daniel Brill{" "}
+            <i>(alternate: Neale Dougherty)</i>
+          </li>
+          <li>
+            <strong>Chester County Appointee:</strong> Julie Mulcahy{" "}
+            <i>(alternate: Vickie Brown)</i>
+          </li>
+          <li>
+            <strong>Delaware County Appointee:</strong> Steve Goldfield{" "}
+            <i>(alternate: Rebecca Yurkovich)</i>
+          </li>
+          <li>
+            <strong>Coordinator:</strong> Liz Compitello, DVRPC
+          </li>
+          <li>
+            <strong>Meeting Frequency: </strong>The Energy Board meets
+            quarterly. Agendas will be posted approximately 7 days before a
+            meeting. Public comment can be submitted via{" "}
+            <a className="underline" href="mailto:SEPSPA@dvrpc.org">
+              SEPSPA@dvrpc.org
+            </a>
+            .
+          </li>
+        </ul>
 
-const moreLinks = [
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
+        <h2 className="font-semibold">Adopted Guiding Documents</h2>
+        <ol className="list-decimal ml-8">
+          <li>
+            <a className="underline" href="/">
+              SEP Memorandum of Understanding
+            </a>
+          </li>
+          <li>
+            <a className="underline" href="/">
+              Electricity Procurement and Management Plan
+            </a>
+          </li>
+          <li>
+            <a className="underline" href="/">
+              Program Operating Procedures
+            </a>
+          </li>
+          <li>
+            <a className="underline" href="/">
+              Renewable Energy Portfolio
+            </a>
+          </li>
+          <li>
+            <a className="underline" href="/">
+              Board Member Conduct Agreement
+            </a>
+          </li>
+        </ol>
 
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
+        <Committee />
+      </article>
+    </Layout>
+  )
+}
 
-const IndexPage = () => (
-  <Layout>
-    <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1>
-        Welcome to <b>Gatsby!</b>
-      </h1>
-      <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </p>
-    </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
-  </Layout>
-)
-
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
-export const Head = () => <Seo title="Home" />
-
+export const Head = () => <Seo title="Sustainable Energy Partnership" />
 export default IndexPage
