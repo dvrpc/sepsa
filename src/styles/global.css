@@ -1,5 +1,5 @@
 @import url("https://use.typekit.net/xml0yyp.css");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:wght@600;700&family=Source+Sans+3:wght@200..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -15,6 +15,7 @@
 
 body {
   font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
+  font-size: 19px;
 }
 
 h1 {
@@ -55,7 +56,7 @@ body {
   overflow-x: clip;
 }
 a {
-  color: var(--blue);
+  color: #075c9c;
   text-underline-offset: 2px;
 }
 p,
@@ -106,9 +107,20 @@ li {
 .page-content {
   width: min(var(--content), calc(100% - (2 * var(--gutter))));
   margin: 0 auto;
-  padding: 62px 0 74px;
+  padding: 94px 0 74px;
   flex: 1;
-  font-size: 1.125rem;
+  font-size: 19px;
+}
+.page-content h1 {
+  font-family: "Inclusive Sans", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  letter-spacing: normal;
+}
+.page-content h2 {
+  font-family: "Inclusive Sans", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 36px;
 }
 .site-footer {
   background: var(--blue);
@@ -131,25 +143,20 @@ li {
 }
 .page-title {
   color: var(--blue);
-  font-weight: 600;
-  font-size: clamp(1.85rem, 2.8vw, 2.4rem);
   line-height: 1.1;
-  letter-spacing: 1px;
-  margin: 0 0 26px;
-  padding-bottom: 14px;
+  margin: 0 0 40px;
+  padding-bottom: 28px;
   border-bottom: 5px solid #aaa;
 }
 .content-copy {
   width: 100%;
   max-width: 1160px;
   min-width: 0;
-  font-size: 1.05rem;
+  font-size: 19px;
   line-height: 1.5;
 }
 .content-copy h2 {
   color: var(--blue);
-  font-weight: 600;
-  font-size: 1.65rem;
   line-height: 1.2;
   margin: 27px 0 8px;
 }
@@ -179,15 +186,18 @@ li {
   font-weight: 700;
 }
 
+.year-filter {
+  margin-top: 24px;
+}
 .year-filter label {
   display: block;
-  font-size: 0.875rem;
+  font-size: 16px;
   margin-bottom: 8px;
 }
 .year-select {
   position: relative;
   width: min(100%, 280px);
-  margin-bottom: 28px;
+  margin-bottom: 12px;
 }
 .year-select::before {
   content: "";
@@ -222,14 +232,14 @@ li {
   padding: 0 64px 0 14px;
   color: var(--ink);
   font: inherit;
-  font-size: 1.05rem;
+  font-size: 19px;
   line-height: 1;
 }
 .meetings {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
-  font-size: 0.96rem;
+  font-size: 19px;
 }
 .meetings-date-column {
   width: 28%;
@@ -237,17 +247,20 @@ li {
 .meetings th {
   padding: 10px 9px;
   text-align: left;
-  border-bottom: 1px solid #5795bb;
+  border-bottom: 1px solid #1d72b2;
 }
 .meetings tbody th {
   font-weight: 400;
 }
+.meetings tbody tr {
+  height: 70px;
+}
 .meetings td {
   padding: 12px 9px;
-  border-bottom: 1px solid #76a8c7;
+  border-bottom: 1px solid #1d72b2;
 }
 .meetings tbody tr:nth-child(even) {
-  background: var(--blue-pale);
+  background: #f2f6fc;
 }
 .meeting-links {
   display: flex;
@@ -280,7 +293,7 @@ li {
   display: block;
 }
 .agenda-page {
-  font-size: 0.95rem;
+  font-size: 19px;
   line-height: 1.48;
 }
 .agenda-page .eyebrow {
@@ -312,7 +325,7 @@ li {
 }
 .agenda-details {
   color: #343434;
-  font-size: 0.95rem;
+  font-size: 19px;
   line-height: 1.55;
 }
 .agenda-details img,
@@ -322,7 +335,6 @@ li {
 .agenda-page .agenda-details > h2 {
   margin: 0 !important;
   color: #343434;
-  font-size: inherit;
   font-weight: 600;
   line-height: 1.55;
 }
@@ -383,10 +395,7 @@ li {
     max-width: 38%;
   }
   .page-content {
-    padding: 38px 0 54px;
-  }
-  .content-copy {
-    font-size: 1rem;
+    padding: 70px 0 54px;
   }
   .year-select {
     width: 100%;

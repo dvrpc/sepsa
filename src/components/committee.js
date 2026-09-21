@@ -191,6 +191,7 @@ const Committee = () => {
                       <td>
                         <div className="meeting-links">
                           <a
+                            className="underline"
                             href={`/agenda/${meeting.id}`}
                             target="_blank"
                             rel="noopener noreferrer"

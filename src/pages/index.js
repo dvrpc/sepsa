@@ -3,6 +3,11 @@ import * as React from "react"
 import Committee from "../components/committee"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import memorandumOfUnderstanding from "../pdf/memorandumofunderstanding.pdf"
+import electricityPlan from "../pdf/electriccostmgmtandprocplan.pdf"
+import operatingProcedures from "../pdf/programoperatingprocedures.pdf"
+import renewableEnergyStrategy from "../pdf/renewableenergystrategy.pdf"
+import newMemberQualifications from "../pdf/newmemberqualifications.pdf"
 
 const IndexPage = () => {
   return (
@@ -85,28 +90,53 @@ const IndexPage = () => {
         </h2>
         <ol className="list-decimal ml-8">
           <li>
-            <a className="underline" href="/">
-              SEP Memorandum of Understanding
+            <a
+              className="underline"
+              href={memorandumOfUnderstanding}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              SEP Memorandum of Understanding (PDF)
             </a>
           </li>
           <li>
-            <a className="underline" href="/">
-              Electricity Procurement and Management Plan
+            <a
+              className="underline"
+              href={electricityPlan}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Electricity Procurement and Management Plan (PDF)
             </a>
           </li>
           <li>
-            <a className="underline" href="/">
-              Program Operating Procedures
+            <a
+              className="underline"
+              href={operatingProcedures}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Program Operating Procedures (PDF)
             </a>
           </li>
           <li>
-            <a className="underline" href="/">
-              Renewable Energy Portfolio
+            <a
+              className="underline"
+              href={renewableEnergyStrategy}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Renewable Energy Strategy (PDF)
             </a>
           </li>
           <li>
-            <a className="underline" href="/">
-              Board Member Conduct Agreement
+            <a
+              className="underline"
+              href={newMemberQualifications}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              New Member Qualifications (PDF)
             </a>
           </li>
         </ol>
