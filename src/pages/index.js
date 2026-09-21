@@ -42,8 +42,9 @@ const IndexPage = () => {
           and flexibility to procure renewable energy.
         </p>
         <p>
-          New members can join at any time if they meet criteria such as load
-          size, credit-worthiness, and alignment with renewable energy goals.
+          New members can join by invitation of the SEP Board if they meet
+          criteria such as load size, credit-worthiness, and alignment with
+          renewable energy goals.
         </p>
 
         <h2 className="font-semibold">Energy Board</h2>
@@ -78,7 +79,10 @@ const IndexPage = () => {
           </li>
         </ul>
 
-        <h2 className="font-semibold">Adopted Guiding Documents</h2>
+        <h2 className="font-semibold">
+          Sustainable Energy Partnership of Southeast PA Adopted Guiding
+          Documents
+        </h2>
         <ol className="list-decimal ml-8">
           <li>
             <a className="underline" href="/">
