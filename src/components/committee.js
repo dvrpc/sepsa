@@ -192,7 +192,7 @@ const Committee = () => {
                         <div className="meeting-links">
                           <a
                             className="underline"
-                            href={`/agenda/${meeting.id}`}
+                            href={`/sepsa/agenda/${meeting.id}`}
                             target="_blank"
                             rel="noopener noreferrer"
                           >
