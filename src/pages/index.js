@@ -55,15 +55,15 @@ const IndexPage = () => {
         <h2 className="font-semibold">Energy Board</h2>
         <ul className="board-list">
           <li>
-            <strong>Chairperson:</strong> Dave Donelan, Montgomery County{" "}
+            <strong>Chairperson:</strong> Devi Ramkissoon, Montgomery County{" "}
             <i>(alternate: Joe Coco)</i>
           </li>
           <li>
-            <strong>Bucks County Appointee:</strong> Daniel Brill{" "}
-            <i>(alternate: Neale Dougherty)</i>
+            <strong>Bucks County Appointee:</strong> David Bria{" "}
+            <i>(alternate: Jeanette Weaver)</i>
           </li>
           <li>
-            <strong>Chester County Appointee:</strong> Julie Mulcahy{" "}
+            <strong>Chester County Appointee:</strong> Julie Bookheimer{" "}
             <i>(alternate: Vickie Brown)</i>
           </li>
           <li>
