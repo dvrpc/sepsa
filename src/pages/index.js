@@ -60,7 +60,7 @@ const IndexPage = () => {
           </li>
           <li>
             <strong>Bucks County Appointee:</strong> David Bria{" "}
-            <i>(alternate: Jeanette Weaver)</i>
+            <i>(alternate: Jeannette Weaver)</i>
           </li>
           <li>
             <strong>Chester County Appointee:</strong> Julie Bookheimer{" "}
