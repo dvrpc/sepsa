@@ -90,7 +90,8 @@ const AgendaPage = () => {
     <Layout>
       <article className="content-copy agenda-page">
         <Link className="eyebrow" to="/">
-          &lsaquo; Home
+          <span aria-hidden="true">&lsaquo;</span>{" "}
+          <span className="underline">Home</span>
         </Link>
         <h1 className="page-title">
           Agenda

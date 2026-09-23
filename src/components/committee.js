@@ -190,12 +190,7 @@ const Committee = () => {
                       </th>
                       <td>
                         <div className="meeting-links">
-                          <a
-                            className="underline"
-                            href={`/sepsa/agenda/${meeting.id}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
+                          <a href={`/sepsa/agenda/${meeting.id}`}>
                             Agenda
                           </a>
                           {validUrls.has(urls.highlights) && (

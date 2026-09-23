@@ -267,6 +267,9 @@ li {
   flex-wrap: wrap;
   gap: 18px;
 }
+.meeting-links a {
+  text-decoration: underline;
+}
 .agenda-actions {
   display: flex;
   flex-wrap: wrap;
@@ -298,6 +301,8 @@ li {
 }
 .agenda-page .eyebrow {
   margin-bottom: 8px;
+  font-size: 19px;
+  text-decoration: none;
 }
 .agenda-page .page-title {
   margin-bottom: 31px;
@@ -335,6 +340,8 @@ li {
 .agenda-page .agenda-details > h2 {
   margin: 0 !important;
   color: #343434;
+  font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
+  font-size: 21px;
   font-weight: 600;
   line-height: 1.55;
 }
@@ -356,6 +363,15 @@ li {
 .agenda-details ul {
   margin-top: 3px;
   margin-bottom: 8px;
+}
+.agenda-details ol {
+  list-style-type: decimal;
+}
+.agenda-details ol ol {
+  list-style-type: lower-alpha;
+}
+.agenda-details ol ol ol {
+  list-style-type: decimal;
 }
 .agenda-details li ol,
 .agenda-details li ul {
