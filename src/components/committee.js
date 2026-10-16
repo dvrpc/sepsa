@@ -190,9 +190,7 @@ const Committee = () => {
                       </th>
                       <td>
                         <div className="meeting-links">
-                          <a href={`/sepsa/agenda/${meeting.id}`}>
-                            Agenda
-                          </a>
+                          <a href={`/agenda/${meeting.id}`}>Agenda</a>
                           {validUrls.has(urls.highlights) && (
                             <a
                               href={`https://www3.dvrpc.org/asp/committee/committees/${
